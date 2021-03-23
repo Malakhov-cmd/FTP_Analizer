@@ -1,0 +1,54 @@
+220 (vsFTPd 3.0.2)
+USER testftp_guest
+331 Please specify the password.
+PASS 12345
+230 Login successful.
+SYST
+215 UNIX Type: L8
+PASV
+227 Entering Passive Mode (91,222,128,11,32,65).
+LIST 
+150 Here comes the directory listing.
+226 Directory send OK.
+PASV
+227 Entering Passive Mode (91,222,128,11,47,253).
+LIST /.log
+150 Here comes the directory listing.
+226 Directory send OK.
+PASV
+227 Entering Passive Mode (91,222,128,11,198,68).
+LIST /TEST
+150 Here comes the directory listing.
+226 Directory send OK.
+PASV
+227 Entering Passive Mode (91,222,128,11,19,187).
+LIST /TEST/newfolder
+150 Here comes the directory listing.
+226 Directory send OK.
+PASV
+227 Entering Passive Mode (91,222,128,11,241,57).
+LIST /htdocs
+150 Here comes the directory listing.
+226 Directory send OK.
+PASV
+227 Entering Passive Mode (91,222,128,11,248,244).
+LIST /htdocs/123
+150 Here comes the directory listing.
+226 Directory send OK.
+PASV
+227 Entering Passive Mode (91,222,128,11,132,252).
+LIST /htdocs/qwerty
+150 Here comes the directory listing.
+226 Directory send OK.
+PASV
+227 Entering Passive Mode (91,222,128,11,70,145).
+LIST /test.test
+150 Here comes the directory listing.
+226 Directory send OK.
+PASV
+227 Entering Passive Mode (91,222,128,11,47,13).
+LIST /tmp
+150 Here comes the directory listing.
+226 Directory send OK.
+QUIT
+221 Goodbye.
